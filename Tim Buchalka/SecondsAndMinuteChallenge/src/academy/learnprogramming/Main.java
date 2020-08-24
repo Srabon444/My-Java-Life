@@ -10,7 +10,7 @@ public class Main {
     }
 
     private static String getDurationString(int minutes, int seconds) {
-        if ((minutes < 0) || (seconds >= 0) || (seconds <= 59)) {
+        if ((minutes < 0) || (seconds < 0) || (seconds >= 59)) {
             return "Invalid Value";
         }
         int hours = minutes / 60;
